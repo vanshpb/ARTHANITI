@@ -1,0 +1,152 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: large;
+    
+}
+/* .background{
+    background-image: url(../sukuna-jujutsu-kaisen-4k-uhdpaper.com-325.1_a-thumbnail.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+} */
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    background: rgb(255, 72, 0);
+    background: linear-gradient(90deg, rgb(0, 0, 0),  rgb(255, 72, 0) 35%,  rgb(255, 128, 0) 100%);
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: auto;
+    height: 65px;
+}
+/* Footer Styles */
+footer {
+    background-color: #ff6600;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width:400px){
+    .navbar:hover{
+        width: 40px;
+    }
+    header {
+        color: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgb(255, 72, 0) 0%,rgb(255, 128, 0) 35%, rgb(255, 192, 130) 100%);
+        position:absolute;
+        width: 100%;
+        text-align: right;
+        font-size: 8px;
+    }
+}
+@media (max-width:600px){
+    .navbar:hover{
+        width: 100px;
+    }
+    header {
+        color: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgb(255, 72, 0) 0%, rgb(255, 128, 0) 35%, rgb(255, 192, 130) 100%);
+        position:absolute;
+        width: 100%;
+        text-align: right;
+    }
+}
+.nav-bar {
+    display: none;
+    /* Hidden by default */
+    background-color: #ff6600;
+    position: absolute;
+    top: 0px;
+    /* Adjust this value according to your needs */
+    left: 0;
+    width: 200px;
+    height: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 1px;
+    transition-duration: .5s;
+    transition: .5s;
+}
+
+.nav-bar a {
+    /* background: #ff0051; */
+    margin: auto;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid #444;
+}
+
+.nav-bar a:hover {
+    color: antiquewhite;
+    border: 1px solid black;
+    box-shadow: 0 0 10px #ff4400, 0 0 20px #000000, 0 0 20px #ffe4ce inset;
+    background: linear-gradient(90deg,rgb(255, 72, 0) 0%, rgb(255, 128, 0) 35%, rgb(255, 192, 130) 100%);
+    transition-duration: .5s;
+    transition: .5s;
+}
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    border: 1px solid black;
+    display: none;
+    position: absolute;
+    /* top */
+    left: 20%;
+    background: linear-gradient(90deg, rgb(255, 72, 0)0%,rgb(255, 128, 0) 35%, rgb(255, 192, 130) 100%);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #575757;
+}
+
+.dropdown-content a:hover {
+    background: linear-gradient(90deg, rgb(255, 72, 0) 0%, rgb(255, 128, 0) 35%,rgb(255, 192, 130) 100%);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background: linear-gradient(90deg, rgb(255, 72, 0) 0%, rgb(255, 128, 0) 35%,rgb(255, 192, 130) 100%);
+}
+
+/* Bars icon styling */
+.menu-icon {
+    top: 0%;
+    width: fit-content;
+    font-size: 34px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    position:fixed;
+    padding: 10px;
+}
+
+/* Show the nav bar on hover */
+.menu-icon:hover+.nav-bar,
+.nav-bar:hover {
+    transition-duration: 2s;
+    transition: 2s;
+    display:block;
+}
